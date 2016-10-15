@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RegExp test</title>
+</head>
+<body>
+
+    <form name="form">
+        <p>text</p>
+        <input type="text" name="text">
+        <p>reg exp</p>
+        <input type="text" name="reg">
+        <input type="button" id="exec" value="EXEC">
+    </form>
+
+    <br>
+    <br>
+    <p>match</p>
+    <p id="match_text">please exec</p>
+    <br>
+
+    <script>
+        document.getElementById('exec').addEventListener('click', function(){
+            var regexp = document.form.reg.value;
+            var text = document.form.text.value;
+            document.getElementById('match_text').innerHTML = text.match(regexp) ? text.match(regexp) : "null";
+        });
+        // function regExp_test(){
+        //     var text = 'Hello! world';
+        //     var pattern = /l+/g;
+        //     var match;
+        //     while( match = pattern.exec(text) ) {
+        //         console.log(match);
+        //     }
+        // }
+        // function test2(){
+        //     // var text ="abcefghabcabc";
+        //     var text = "abcdefghrjklmnopqrstuvwxyz";
+        //     var m = text.match(/abc/g);
+        //     console.log(m);
+        // }
+    </script>
+</body>
+</html>
