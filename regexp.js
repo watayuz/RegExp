@@ -1,10 +1,10 @@
 'use strict';
-
-
-// HTMLを正規表現してみる
+(function(){
+    // HTMLを正規表現してみる
 // var dummy = '<!DOCTYPE html><html><head><title>titleValue</title></head><body><p>P_ELEMENT</p></body></html>';
 var before_str = 'aaabbbcccdddeeefffaaa'
 var regexp = new RegExp(/aaa/g);
+
 console.log(before_str.replace(regexp, ''));
 console.log(before_str.match(regexp, '').length);
 
@@ -37,3 +37,5 @@ document.getElementById('check').addEventListener('click', function(){
     //     var m = text.match(/abc/g);
     //     console.log(m);
     // }
+})();
+
