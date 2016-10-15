@@ -15,6 +15,9 @@ var re = new RegExp("abc", "i");
 // gを指定で文字列の全体を検索できる
 // mを指定で複数行に分けて検索できる
   
+
+"abcdefg".test(re);
+↑だとBooleanで文字列がマッチしたか返してくれる
 "abcdefg".match(re);  
 でも同じ？
 
