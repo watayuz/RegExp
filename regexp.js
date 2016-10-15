@@ -1,12 +1,7 @@
 'use strict';
+
 (function(){
     // HTMLを正規表現してみる
-// var dummy = '<!DOCTYPE html><html><head><title>titleValue</title></head><body><p>P_ELEMENT</p></body></html>';
-var before_str = 'aaabbbcccdddeeefffaaa'
-var regexp = new RegExp(/aaa/g);
-
-console.log(before_str.replace(regexp, ''));
-console.log(before_str.match(regexp, '').length);
 
 document.getElementById('exec').addEventListener('click', function(){
     var regexp = document.form.reg.value;
@@ -37,5 +32,18 @@ document.getElementById('check').addEventListener('click', function(){
     //     var m = text.match(/abc/g);
     //     console.log(m);
     // }
+    // 
+    // 
+    // 1回以上の繰り返し
+    // var text = 'JavaScript';
+    // if( /Java\w+cript/.test( text ) ) {
+    //     alert( '+ match' );
+    // }
+    // 
+    // var dummy = '<!DOCTYPE html><html><head><title>titleValue</title></head><body><p>P_ELEMENT</p></body></html>';
+    // var before_str = 'aaabbbcccdddeeefffaaa'
+    // var regexp = new RegExp(/aaa/g);        //length : 2
+    // console.log(before_str.replace(regexp, ''));
+    // console.log(before_str.match(regexp, '').length);
 })();
 
