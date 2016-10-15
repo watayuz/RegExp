@@ -10,6 +10,6 @@ str = "12:34:56";
 if( str.match(/^[0-9][0-9]:[0-9][0-9]:[0-9][0-9]$/) ){ /マッチした時の処理/ }  
   
 "text".match("regStr") // regStrを含んでいるかどうか  
-var re = new RegExp("abcdef", "i");  
-"text".match(re);  
+var re = new RegExp("abc", "i");  
+"abcdefg".match(re);  
 でも同じ？
