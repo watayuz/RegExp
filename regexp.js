@@ -2,7 +2,7 @@
 
 
 // HTMLを正規表現してみる
-// var html = '<!DOCTYPE html><html><head><title>titleValue</title></head><body><p>P_ELEMENT</p></body></html>';
+// var dummy = '<!DOCTYPE html><html><head><title>titleValue</title></head><body><p>P_ELEMENT</p></body></html>';
 var before_str = 'aaabbbcccdddeeefffaaa'
 var regexp = new RegExp(/aaa/g);
 console.log(before_str.replace(regexp, ''));
@@ -11,7 +11,7 @@ console.log(before_str.match(regexp, '').length);
 document.getElementById('exec').addEventListener('click', function(){
     var regexp = document.form.reg.value;
     var text = document.form.text.value;
-    document.getElementById('match_text').innerHTML = text.match(regexp) ? text.match(regexp) : "null";
+    document.getElementById('match_text').innerHTML = text.match(regexp) ? "true" : "false";
 });
 
 document.getElementById('check').addEventListener('click', function(){
